@@ -6,12 +6,12 @@ function getAnimeQuote() {
   var URL
   var path = window.location.pathname;
   var page = path.split("/").pop();
-  if(page == "index.html"){
-    URL = 'https://animechan.vercel.app/api/quotes/anime?title=one+piece&page=' + Math.floor(Math.random() * 99)
+  if(page == "bleach.html"){
+    URL = 'https://animechan.vercel.app/api/quotes/anime?title=bleach&page=' + Math.floor(Math.random() * 99)
   }else if(page == "naruto.html"){
     URL = 'https://animechan.vercel.app/api/quotes/anime?title=naruto&page=' + Math.floor(Math.random() * 99)
   }else{
-    URL = 'https://animechan.vercel.app/api/quotes/anime?title=bleach&page=' + Math.floor(Math.random() * 99)
+    URL = 'https://animechan.vercel.app/api/quotes/anime?title=one+piece&page=' + Math.floor(Math.random() * 99)
   }
 
   
