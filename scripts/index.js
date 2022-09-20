@@ -6,7 +6,7 @@ function getAnimeQuote() {
   var URL
   var path = window.location.pathname;
   var page = path.split("/").pop();
-  if(page == "onepiece.html"){
+  if(page == "index.html"){
     URL = 'https://animechan.vercel.app/api/quotes/anime?title=one+piece&page=' + Math.floor(Math.random() * 99)
   }else if(page == "naruto.html"){
     URL = 'https://animechan.vercel.app/api/quotes/anime?title=naruto&page=' + Math.floor(Math.random() * 99)
