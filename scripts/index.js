@@ -6,6 +6,7 @@ function getAnimeQuote() {
   var URL
   var path = window.location.pathname;
   var page = path.split("/").pop();
+  console.log(page)
   if(page == "bleach.html"){
     URL = 'https://animechan.vercel.app/api/quotes/anime?title=bleach&page=' + Math.floor(Math.random() * 99)
   }else if(page == "naruto.html"){
