@@ -56,9 +56,11 @@ function checkValue(char){
 function resetColor(char){
     if(document.getElementById(char).classList.contains("correct")){
         document.getElementById(char).classList.remove("correct")
+        alert("Correct!!!")
     }
     if(document.getElementById(char).classList.contains("incorrect")){
         document.getElementById(char).classList.remove("incorrect")
+        alert("WRONG!!!")
     }
 }
 
