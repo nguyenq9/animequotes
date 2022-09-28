@@ -47,22 +47,18 @@ function checkValue(char){
     var c = document.getElementById(char)
     if(c.innerText == characterPTag0.innerText){
         document.getElementById(char).classList.add("correct")
-        alert("Correct!!!")
     }
     else{
         document.getElementById(char).classList.add("incorrect")
-        alert("WRONG!!!")
     }
 }
 
 function resetColor(char){
     if(document.getElementById(char).classList.contains("correct")){
         document.getElementById(char).classList.remove("correct")
-        alert("Correct!!!")
     }
     if(document.getElementById(char).classList.contains("incorrect")){
         document.getElementById(char).classList.remove("incorrect")
-        alert("WRONG!!!")
     }
 }
 
