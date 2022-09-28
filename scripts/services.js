@@ -47,9 +47,11 @@ function checkValue(char){
     var c = document.getElementById(char)
     if(c.innerText == characterPTag0.innerText){
         document.getElementById(char).classList.add("correct")
+        alert("Correct!!!")
     }
     else{
         document.getElementById(char).classList.add("incorrect")
+        alert("WRONG!!!")
     }
 }
 
